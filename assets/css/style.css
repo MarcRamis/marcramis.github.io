@@ -975,6 +975,23 @@ main {
   animation: scaleUp 0.25s ease forwards;
 }
 
+.project-container-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
 @keyframes scaleUp {
   0% { transform: scale(0.5); }
   100% { transform: scale(1); }
@@ -1007,6 +1024,23 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
+
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.project-item-icon-box-personal {
+  --scale: 10;
 
   background: var(--jet);
   color: var(--orange-yellow-crayola);
