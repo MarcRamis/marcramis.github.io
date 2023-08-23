@@ -168,138 +168,205 @@
       </nav>
 
       <!--
-        - #ABOUT
+        - #PROJECTS
       -->
 
-      <article class="about" data-page="about">
+      <article class="projects active" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
-        <section class="about-text">
-          <p>
-            I define myself as a person passionate about video games, eager for knowledge, and constantly learning. 
-            I enjoy every aspect related to programming and design, but my true delight lies in creating satisfying 
-            game mechanics and designing patterns that captivate players.
-          </p>
+        <section class="projects">
 
-          <p>
-            In my free time, I like to create experiences as a D&D 5e game master by creating and designing a fun, fair and exciting encounters for all players.
-          </p>
-        </section>
+          <!--
+          <ul class="filter-list">
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Good At</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/fast-learning.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Fast Learning</h4>
-
-                <p class="service-item-text">
-                  I believe that my extensive educational background has allowed me to delve into various 
-                  domains of tools, such as design, 3D, or programming languages and frameworks. 
-                  This enables me to quickly grasp a wide range of programming languages and frameworks.
-                </p>
-              </div>
-
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/problem-resolution.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Problem Resolution</h4>
-
-                <p class="service-item-text">
-                  I am confident in my capacity to solve any problem related to software skills. Depending on its complexity, 
-                  I can always resort to creating visual diagrams to solve algorithms and meticulously debug to uncover bugs.
-                </p>
-              </div>
-
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/teamplayer.png" alt="mobile app icon" style="" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Teamplayer</h4>
-
-                <p class="service-item-text">
-                  I have worked with many teams, having better experiences than others, 
-                  but always learning something new about how to work with a team and create a good work environment. 
-                  I consider that I have a great initiative when starting a new project and contributing with new ideas, 
-                  creating workflows with agile methodologies.
-                </p>
-              </div>
-
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
             </li>
 
-            <li class="service-item">
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/clean-code.png" alt="camera icon" width="40">
+          </ul>
+          -->
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Clean code</h4>
+            </button>
 
-                <p class="service-item-text">
-                  As a programmer, I believe that knowing how to clean up your own code is something that must be done to streamline 
-                  the work for the entire team, but more importantly, to make it easier for yourself. This way, when you come back to 
-                  that part of the code in a month, you won't have to spend an hour relearning what you were doing.
-                </p>
-              </div>
+            <ul class="select-list">
 
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- BOOM AND BOX -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>boomandbox</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
+            </li>
+
+            <!-- GUNS AND BONES -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>gunsandbones</button>
+                  </div>
+                  <img src="./assets/images/projects/gunsandbones-protrait.jpg" alt="gunsandbones" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Guns & Bones</h3>
+
+                <p class="project-category">Gameplay & UI Programmer</p>
+              </a>
+            </li>
+
+            <!-- HANGMAN -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>hangman</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
+            </li>
+
+            <!-- ALTER LIGHT -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>alterlight</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
+            </li>
+
+            <!-- HUNGERIN -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>hungerin</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
+            </li>
+
+            <!-- RYTHMSYSTEM -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>rythmsystem</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
+            </li>
+
+            <!-- Castlevania JS -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box-personal">
+                    <button name="navbar-link" data-nav-link>castlevania</button>
+                  </div>
+                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
+                </figure>
+
+                <h3 class="project-title">Boom and Box</h3>
+
+                <p class="project-category">Programmer & Producer</p>
+
+              </a>
             </li>
 
           </ul>
 
         </section>
 
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div>
-
-
       </article>
-
-
-
-
 
       <!--
         - #RESUME
@@ -877,208 +944,135 @@
 
       </article>
 
-
-      <!--
-        - #PROJECTS
+     <!--
+        - #ABOUT
       -->
 
-      <article class="projects active" data-page="projects">
+      <article class="about" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">Projects</h2>
+          <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <section class="projects">
+        <section class="about-text">
+          <p>
+            I define myself as a person passionate about video games, eager for knowledge, and constantly learning. 
+            I enjoy every aspect related to programming and design, but my true delight lies in creating satisfying 
+            game mechanics and designing patterns that captivate players.
+          </p>
 
-          <!--
-          <ul class="filter-list">
+          <p>
+            In my free time, I like to create experiences as a D&D 5e game master by creating and designing a fun, fair and exciting encounters for all players.
+          </p>
+        </section>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+        <!--
+          - service
+        -->
 
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
+        <section class="service">
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
+          <h3 class="h3 service-title">Good At</h3>
 
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
+          <ul class="service-list">
 
-          </ul>
-          -->
+            <li class="service-item">
 
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
+              <div class="service-icon-box">
+                <img src="./assets/images/fast-learning.svg
+                " alt="design icon" width="40">
               </div>
 
-            </button>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Fast Learning</h4>
 
-            <ul class="select-list">
+                <p class="service-item-text">
+                  I believe that my extensive educational background has allowed me to delve into various 
+                  domains of tools, such as design, 3D, or programming languages and frameworks. 
+                  This enables me to quickly grasp a wide range of programming languages and frameworks.
+                </p>
+              </div>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <!-- BOOM AND BOX -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>boomandbox</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">Boom and Box</h3>
-
-                <p class="project-category">Programmer & Producer</p>
-
-              </a>
             </li>
 
-            <!-- GUNS AND BONES -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="service-item">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>gunsandbones</button>
-                  </div>
-                  <img src="./assets/images/projects/gunsandbones-protrait.jpg" alt="gunsandbones" loading="lazy" >
-                </figure>
+              <div class="service-icon-box">
+                <img src="./assets/images/problem-resolution.png" alt="Web development icon" width="40">
+              </div>
 
-                <h3 class="project-title">Guns & Bones</h3>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Problem Resolution</h4>
 
-                <p class="project-category">Gameplay & UI Programmer</p>
-              </a>
+                <p class="service-item-text">
+                  I am confident in my capacity to solve any problem related to software skills. Depending on its complexity, 
+                  I can always resort to creating visual diagrams to solve algorithms and meticulously debug to uncover bugs.
+                </p>
+              </div>
+
             </li>
 
-            <!-- HANGMAN -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="service-item">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>hangman</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
+              <div class="service-icon-box">
+                <img src="./assets/images/teamplayer.png" alt="mobile app icon" style="" width="40">
+              </div>
 
-                <h3 class="project-title">Boom and Box</h3>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Teamplayer</h4>
 
-                <p class="project-category">Programmer & Producer</p>
+                <p class="service-item-text">
+                  I have worked with many teams, having better experiences than others, 
+                  but always learning something new about how to work with a team and create a good work environment. 
+                  I consider that I have a great initiative when starting a new project and contributing with new ideas, 
+                  creating workflows with agile methodologies.
+                </p>
+              </div>
 
-              </a>
             </li>
 
-            <!-- ALTER LIGHT -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="service-item">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>alterlight</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
+              <div class="service-icon-box">
+                <img src="./assets/images/clean-code.png" alt="camera icon" width="40">
+              </div>
 
-                <h3 class="project-title">Boom and Box</h3>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Clean code</h4>
 
-                <p class="project-category">Programmer & Producer</p>
+                <p class="service-item-text">
+                  As a programmer, I believe that knowing how to clean up your own code is something that must be done to streamline 
+                  the work for the entire team, but more importantly, to make it easier for yourself. This way, when you come back to 
+                  that part of the code in a month, you won't have to spend an hour relearning what you were doing.
+                </p>
+              </div>
 
-              </a>
-            </li>
-
-            <!-- HUNGERIN -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>hungerin</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">Boom and Box</h3>
-
-                <p class="project-category">Programmer & Producer</p>
-
-              </a>
-            </li>
-
-            <!-- RYTHMSYSTEM -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>rythmsystem</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">Boom and Box</h3>
-
-                <p class="project-category">Programmer & Producer</p>
-
-              </a>
-            </li>
-
-            <!-- Castlevania JS -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box-personal">
-                    <button name="navbar-link" data-nav-link>castlevania</button>
-                  </div>
-                  <img src="./assets/images/projects/boomandbox-portrait.png" alt="boomandbox" loading="lazy" >
-                </figure>
-
-                <h3 class="project-title">Boom and Box</h3>
-
-                <p class="project-category">Programmer & Producer</p>
-
-              </a>
             </li>
 
           </ul>
 
         </section>
 
-      </article>
+        <!--
+          - testimonials modal
+        -->
 
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+      </article>
 
       <!--
         - #BOOMANDBOX
