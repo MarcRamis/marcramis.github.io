@@ -841,6 +841,22 @@ main {
  * skills 
  */
 
+.skills-personal-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.skills-personal-item-end {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ 
 .skills-title { margin-bottom: 10px; }
 
 .skills-subtitle {
