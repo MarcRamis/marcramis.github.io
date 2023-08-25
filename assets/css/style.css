@@ -1960,6 +1960,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .textNegrita 
 { 
-    color: rgb(247, 222, 0); 
-    font-weight: 300;
+    color: var(--vegas-gold); 
+    font-size: var(--fs-20);
+    font-weight: var(--fw-500);
 } 
