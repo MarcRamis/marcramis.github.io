@@ -555,6 +555,14 @@ main {
   line-height: 1.6;
 }
 
+.service-item-text-personal {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 
 /**
  * #testimonials 
@@ -1943,3 +1951,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.textNegrita 
+{ 
+    color: rgb(247, 222, 0); 
+    font-weight: 300;
+} 
