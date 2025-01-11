@@ -155,7 +155,9 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body { 
+  padding-bottom: 60px;
+  background: var(--smoky-black); }
 
 
 
@@ -2011,7 +2013,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
   background: var(--eerie-black-2);
   border-top: 1px solid var(--jet);
-  padding: 15px;
+  padding: 10px;
   box-shadow: var(--shadow-2);
   z-index: 10;
   text-align: center;
