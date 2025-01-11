@@ -368,6 +368,16 @@ main {
   border-radius: 8px;
 }
 
+.info-content .resume {
+  color: var(--orange-yellow-crayola);
+  background: var(--onyx);
+  font-size: var(--fs-24);
+  font-weight: var(--fw-300);
+  width: max-content;
+  padding: 3px 12px;
+  border-radius: 8px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -1447,6 +1457,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info-content .title { padding: 5px 18px; }
 
+  .info-content .resume { padding: 5px 18px; }
+
   .info_more-btn {
     top: -30px;
     right: -30px;
@@ -1945,6 +1957,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .info-content .title { margin: auto; }
+  .info-content .resume { margin: auto; }
 
   .info_more-btn { display: none; }
 
